@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Railway</title>
+    <script src="./assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <script>
+        $(document).ready(() => {
+            $("#header").load("header.html");
+            $("#navbar").load("navbar.html");
+            $("#ImgSlider").load("Carousel.html");
+            $("#Ministers").load("MinisterPhotos.html");
+            $("#Notification").load("Notification_Updates.html");
+            $("#ImpLinks").load("MenuBar.html");
+            $("#SocialMedia").load("SocialMedia.html");
+            $("#test").load("test.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <div id="header"></div>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col test-cs" id="navbar"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div id="ImgSlider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>
+                    Latest News <marquee behavior="" direction="">Latest News</marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <nav class="navbar navbar-expand-sm headingColor justify-content-center my-1">
+                    Important Circular
+                </nav>
+                <div id="Notification"></div>
+            </div>
+            <div class="col-6">
+                <nav class="navbar navbar-expand-sm headingColor justify-content-center my-1">
+                    Ministers
+                </nav>
+                <div class="my-5" id="Ministers"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid border my-3 bg-menu">
+        <div class="row justify-content-center p-3 text-center">
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="http://google.com">
+                        <div class="card-body">E-Ticketing</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="#">
+                        <div class="card-body">PNR-Status</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">FNR-Enquiry</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">Bhasha Sangam App</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">Station Gallery</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center p-3 text-center">
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">Train TimeTable</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">Railway Tender</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">Railway Drishti</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">
+                            Indian Railways / भारतीय रेल (पत्रिका)
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card bg-color menuCard">
+                    <a class="text-white text-decoration-none" href="">
+                        <div class="card-body">Wallpaper</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-texture">
+        <div class="row justify-content-start">
+            <div class="col-4">
+                <div id="ImpLinks"></div>
+            </div>
+            <div class="col-6">
+                <div id="SocialMedia"></div>
+            </div>
+        </div>
+    </div>
+    <div id="test"></div>
+    <div id="footer"></div>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
