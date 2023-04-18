@@ -1,0 +1,183 @@
+.bg-texture {
+  background-image: url("../images/bgTexture.jpg");
+}
+.bg-menu {
+  background-color: #f9f9fa;
+}
+.list-bullet {
+  list-style-type: square;
+}
+.menu-bullet {
+  list-style-type: none;
+}
+.bg-color {
+  background-color: #024;
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #f9fafb;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #f9fafb;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #024;
+  border: 0;
+}
+.dropdown-item:hover {
+  background-color: #06b1ac;
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #024;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #06b1ac;
+  color: white;
+}
+
+.menu-bullet:hover {
+  background-color: #06b1ac;
+  color: #fff;
+}
+
+.offcanvas-header .btn-close {
+  padding: 0.5rem 0.5rem;
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+  background-color: white;
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #222b33;
+  border-radius: 0.25rem;
+}
+.ministerCard {
+  border-radius: 50px;
+}
+.menuCard {
+  border-radius: 5px 30px 5px 30px;
+  background-color: #024;
+  color: white;
+  box-shadow: 0 5px grey;
+}
+
+.menuCard:hover {
+  transform: scale(0.8);
+  background-color: #0dcaf0;
+}
+
+.nav-tabs:hover .nav-item.show:hover .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #082294;
+  border-color: #082294;
+  border-radius: 30px 5px 30px 5px;
+  margin-right: 20px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #024;
+  border-color: #024;
+  border-radius: 30px 5px 30px 5px;
+  margin-right: 20px;
+}
+.headingColor {
+  background-color: #607de6;
+  color: white;
+}
+.navbar {
+  background-color: #024;
+}
+.navbarBg {
+  background-color: #024;
+  color: white;
+}
+.headlineBg {
+  background-color: #024;
+  color: white;
+  width: 30px;
+}
+.nav-tiles {
+  background: #7b4397; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dc2430,
+    #7b4397
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dc2430,
+    #7b4397
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-img-top {
+  width: 60%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card-img-top:hover {
+  background-color: rgb(142, 184, 226);
+}
+.bg-secondary {
+  background-color: grey;
+}
+.photoGallery {
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ff6e7f,
+    #bfe9ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ff6e7f,
+    #bfe9ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

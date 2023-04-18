@@ -1,136 +1,199 @@
 <style>
-    .dropdown.drop-toggle::after {
-        border-top: 0;
-        border-bottom: .3em solid;
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #024;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
     }
 
-    .dropdown:hover.drop-menu {
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #024;
+        color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
         display: block;
     }
 
-    .dropdown.drop-menu {
-        display: none;
-    }
-
-    .navbar .narbar-nav .nav-link:hover {
-        background-color: red;
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #0693e3;
         color: white
     }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: #024;
+    }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-sm bg-color navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " style="background-color: #06b1ac;" href="#">Home</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Ministry of Railways
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ministry of
+                        Railways</a>
+                    <ul class="dropdown-menu bg-color">
+                        <li><a class="dropdown-item" href="#">Railway Board</a></li>
+                        <li><a class="dropdown-item" href="#">Other Railway</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Zonal
+                        Railways</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link</a></li>
+                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                        <li><a class="dropdown-item" href="#">A third link</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Bharat Gaurav Trains
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger
+                        Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Coach/Train booking</a></li>
+                        <li><a class="dropdown-item" href="#">E-Ticketing</a></li>
+                        <li><a class="dropdown-item" href="#">PNR Status</a></li>
+                        <li><a class="dropdown-item" href="#">Train Arrival/Departure</a></li>
+                        <li><a class="dropdown-item" href="#">E-Catering</a></li>
+                        <li><a class="dropdown-item" href="#"> Retiring Room</a></li>
+                        <li><a class="dropdown-item" href="#">List of Zone/Category wise Railway Station opened for
+                                passenger services in IR (As on 01.12.2022)</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Zonal Railways
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Manufacturing Unit
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Educational & Research
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">RDSO</a></li>
-                        <li><a class="dropdown-item" href="#">NAIR Vadodara</a></li>
-                        <li><a class="dropdown-item" href="#">IRICEN PUNE</a></li>
-                        <li><a class="dropdown-item" href="#">IRIEEN NASIK</a></li>
-                        <li><a class="dropdown-item" href="#">IRIMEE JAMALPUR</a></li>
-                        <li><a class="dropdown-item" href="#">IRISET SECUNDRABAD</a></li>
-                        <li><a class="dropdown-item" href="#">IRITM LUCKNOW</a></li>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Freight
+                        Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Freight Business</a></li>
+                        <li><a class="dropdown-item" href="#">Other Business</a></li>
 
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Heritage
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Recuritment
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Manufacturing
+                        Units</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> CLW Chitranjan</a></li>
+                        <li><a class="dropdown-item" href="#">CORE Allahabad</a></li>
+                        <li><a class="dropdown-item" href="#">BLW Varanasi</a></li>
+                        <li><a class="dropdown-item" href="#">DMW Patiala</a></li>
+                        <li><a class="dropdown-item" href="#"> ICF Chennai</a></li>
+                        <li><a class="dropdown-item" href="#"> MRVC Mumbai</a></li>
+                        <li><a class="dropdown-item" href="#"> RCF Kapurthala</a></li>
+                        <li><a class="dropdown-item" href="#"> RWF Bangalore</a></li>
+                        <li><a class="dropdown-item" href="#"> MCF Raebareli</a></li>
+                        <li><a class="dropdown-item" href="#"> RWP Bela</a></li>
+                        <li><a class="dropdown-item" href="#"> WPO Patna</a></li>
+                        <li><a class="dropdown-item" href="#"> COFMOW</a></li>
                     </ul>
                 </li>
 
-
-
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Heritage</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Indian Heritage</a></li>
+                        <li><a class="dropdown-item" href="#">DHR</a></li>
+                    </ul>
+                </li>
 
             </ul>
+            <div class="flex-end"> <a class="btn bg-color" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </a></div>
+            <div class="offcanvas offcanvas-end bg-color" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 data-bs-dismiss="offcanvas" class="offcanvas-title" id="offcanvasExampleLabel">Close</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
 
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <ul class=" navbar-nav flex-column text-white">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bharat Guarav Trains</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white menu-bullet" href="#">Recuritment</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white menu-bullet " href="#" role="button"
+                                        data-bs-toggle="dropdown">Manufacturing
+                                        Units</a>
+                                    <ul class="dropdown-menu shadow-sm">
+                                        <li><a class="dropdown-item" href="#">RDSO Lucknow</a></li>
+                                        <li><a class="dropdown-item" href="#">NAIR Vadodara</a></li>
+                                        <li><a class="dropdown-item" href="#">IRICEN Pune</a></li>
+                                        <li><a class="dropdown-item" href="#">IRIEEN Nasik</a></li>
+                                        <li><a class="dropdown-item" href="#">IRIMEE Jamalpur</a></li>
+                                        <li><a class="dropdown-item" href="#">IRISET Secunderabad</a></li>
+                                        <li><a class="dropdown-item" href="#">IRITM Lucknow</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <div class="dropdown">
+                                    <button class="dropbtn">Manufacturing
+                                        Units</a></button>
+                                    <div class="dropdown-content">
+                                        <a href="#">RDSO Lucknow</a>
+                                        <a href="#">NAIR Vadodara</a>
+                                        <a href="#">IRICEN Pune</a>
+                                        <a href="#">IRIEEN Nasik</a>
+                                        <a href="#">IRIMEE Jamalpur</a>
+                                        <a href="#">IRISET Secunderabad</a>
+                                        <a href="#">IRITM Lucknow</a>
+                                    </div>
+                                </div> -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-white menu-bullet" href="#">Swatch Bharat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white menu-bullet" href="#">CSR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white menu-bullet" href="#">RTI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
+
+<!-- how to make vertical navbar -->
