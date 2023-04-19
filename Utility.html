@@ -1,30 +1,7 @@
-<!-- <div class="bg-secondary clearfix p-1">
-    <span class=" btn btn-secondary float-start mx-1 border-end">
-        भारत सरकार </span>
-    <span class="btn btn-secondary float-start">
-        Government of India </span>
-    <span class="btn btn-secondary float-end border-start border-end">English</span>
-    <span class="btn btn-secondary float-end border-start">
-        <img src="./assets/images/accessibility_icon.svg" width="20px" alt="" srcset="">
-    </span>
-    <span class="btn btn-secondary float-end border-start">
-        <img src="./assets/images/sitemap.svg" width="20px" alt="">
-
-    </span>
-    <span class="btn btn-secondary float-end border-start">
-        <img src="./assets//images/social_media.svg" width="20px" alt="" srcset="">
-    </span>
-    <span class="btn btn-secondary float-end border-start">
-        <img src="./assets/images/search_icon.svg" class="mx-1" width="20px" alt="" srcset="">
-    </span>
-    <span class="btn btn-secondary float-end border-start ">
-        <a class="text-decoration-none text-white" href="#header"> SKIP TO Main Content</a>
-    </span>
-</div> -->
 <div class="container">
     <div class="row">
         <div class="col-lg-3 col-sm-12 pt-1">
-            <span class=" time"><span><a class="text-decoration-none text-white" lang=""
+            <span class=" time"><span><a class="text-decoration-none text-dark " lang=""
                         href="https://www.xn--i1bj3fqcyde.xn--11b7cb3a6a.xn--h2brj9c/"
                         onclick="return confirm('You are being redirected to an external website. Please note that Ministry of Panchayati Raj cannot be held responsible for external websites content &amp; privacy policies.');"
                         aria-label="भारत सरकार - External site that opens in a new window"
@@ -32,7 +9,7 @@
                         rel="noopener noreferrer">
                         भारत सरकार </a></span> |
                 <i class="mdi mdi-alarm"></i> <span class="animated fadeInDown"><a lang="en"
-                        class="text-decoration-none text-white" href="https://www.india.gov.in/"
+                        class="text-decoration-none text-dark" href="https://www.india.gov.in/"
                         onclick="return confirm('You are being redirected to an external website. Please note that Ministry of Panchayati Raj cannot be held responsible for external websites content &amp; privacy policies.');"
                         aria-label="Government of India - External site that opens in a new window"
                         title="Government of India - External site that opens in a new window" target="_blank"
@@ -40,34 +17,53 @@
                         Government of India </a></span></span>
         </div>
         <div class="col-lg-9 col-sm-12 social-media-icon text-right">
-            <ul class="list-inline m-0 mr-auto">
+            <ul class="list-inline float-end m-0 m-auto">
                 <li class="list-inline-item">
-                    <form class="search-form">
-                        <div class="input-group search-group">
-                            <input type="text" class="form-control search-control" placeholder=" Search..">
-                        </div>
-                    </form>
+                    <div class="dropdown">
+                        <a title="search" class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink1"
+                            data-bs-toggle="dropdown">
+                            <img src="./assets/images/search_icon.svg" class="mx-1" width="20px" alt="" srcset="">
+                        </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink1">
+                            <li>
+                                <form class="search-form">
+                                    <div class="input-group search-group">
+                                        <input type="text" class="form-control search-control" placeholder=" Search..">
+                                    </div>
+                                </form>
+                            </li>
+
+                        </ul>
+                    </div>
+
                 </li>
                 <li class="list-inline-item">
                     <a href="javascript:void(0);" class="" data-toggle="tooltip" data-placement="top"
                         title="screen reader"><i class="fa fa-volume-up text-secondary"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#header" class="text-decoration-none text-white">Skip to Main Content</a>
+                    <a href="#header" class="text-decoration-none text-dark">Skip to Main Content</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-decoration-none text-white" data-toggle="tooltip" data-placement="top"
+                    <a href="#" class="text-decoration-none text-dark" data-toggle="tooltip" data-placement="top"
                         title="Language">हिन्दी</a>
                 </li>
                 <li class="list-inline-item lang-select">
-                    <a class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" data-placement="top"
-                        title="font">
-                        <i class="fa fa-wheelchair"></i>
-                    </a>
-                    <div id="font_size" class="dropdown-menu">
-                        <a id="decrease" class="dropdown-item" href="#"> <b>A<sup>-</sup></b></a>
-                        <a id="resetMe" class="dropdown-item " href="#"><b> A</b></a>
-                        <a id="increase" class="dropdown-item" href="#"> <b>A<sup>+</sup></b></a>
+                    <div class="dropdown">
+                        <a title="font-Size" class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/accessibility_icon.svg" width="20px" alt="" srcset="">
+                        </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item border-bottom" href="#"
+                                    onclick="document.getElementById('fontChange').style.fontSize='0.95em'">A-</a></li>
+                            <li><a class="dropdown-item border-bottom active "
+                                    onclick="document.getElementById('fontChange').style.fontSize='1em'" href="#">A</a>
+                            </li>
+                            <li><a class="dropdown-item  "
+                                    onclick="document.getElementById('fontChange').style.fontSize='1.95em'"
+                                    href="#">A+</a></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
