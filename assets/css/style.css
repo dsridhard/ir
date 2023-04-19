@@ -79,7 +79,7 @@
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #024;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -180,4 +180,14 @@
     #ff6e7f,
     #bfe9ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.util-bg {
+  background-color: lightgray;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0.95rem;
+    padding-left: 0.95rem;
+  }
 }

@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Indian Railway</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- <script src="./assets/js/app.js"></script> -->
-    <link rel="stylesheet" href="./assets/css/style3.css">
-    <link rel="stylesheet" href="./assets/css/style2.css">
+    <link rel="stylesheet" href="./assets/css/socialMedia.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 
 <body class="overflow-auto">
@@ -28,37 +31,36 @@
             $("#Tweeter").load("Tweeter.html");
             $("#Gallery").load("Cards.html");
             $("#PhotoGallery").load("Gallery.html");
-            $("#FlexSlider").load("footerSlider.html")
             $("#footer").load("footer.html");
         });
     </script>
     <div class="float-sm">
         <div class="fl-fl float-fb">
-            <i class="fas fa-train"></i>
+            <img alt="fbicon" src="./assets/images/icons8-train-50.png" height="40px" />
             <a href="#" target="_blank">IRCTC NGET</a>
         </div>
         <div class="fl-fl float-tw">
-            <i class="fas fa-ticket-alt"></i>
+            <img alt="fbicon" src="./assets/images/icons8-ticket-80.png" height="40px" />
             <a href="#" target="_blank">PNR Status</a>
         </div>
         <div class="fl-fl float-gp">
-            <i class="fas fa-comments"></i>
+            <img alt="fbicon" src="./assets/images/icons8-speech-bubble-50.png" height="40px" />
             <a href="#" target="_blank">FNR Enquiry</a>
         </div>
         <div class="fl-fl float-rs">
-            <i class="fab fa-youtube"></i>
+            <img alt="fbicon" src="./assets/images/icons8-youtube-50.png" height="40px" />
             <a href="#" target="_blank">Youtube</a>
         </div>
         <div class="fl-fl float-ig">
-            <i class="fab fa-facebook"></i>
+            <img alt="fbicon" src="./assets/images/icons8-facebook-50.png" height="40px" />
             <a href="#" target="_blank">Facebook</a>
         </div>
         <div class="fl-fl float-pn">
-            <i class="fab fa-twitter"></i>
+            <img alt="fbicon" src="./assets/images/icons8-stack-of-tweets-50.png" height="40px" />
             <a href="#" target="_blank">Twitter</a>
         </div>
     </div>
-    <div id="Util" class="bg-secondary"></div>
+    <div id="Util" class="util-bg"></div>
     <div id="header">
     </div>
     <div>
@@ -79,7 +81,7 @@
             <div class="col-sm-2 col-lg-2 col-md-2 col-md-2">
                 <h3 class="bg-color fs-4 mt-1 border-end">Latest News</h3>
             </div>
-            <div class="col-sm-10 col-lg-10 col-md-10 col-md-10">
+            <div class="col-sm-6 col-lg-10 col-md-10 col-md-10">
                 <marquee class="mt-2">This is an example of html marquee </marquee>
             </div>
         </div>
@@ -103,9 +105,9 @@
     </div>
     <div class="container-fluid bg-light border  p-5">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-            <div class="col">
+            <div class="col ">
                 <a class="text-white text-decoration-none" href="http://">
-                    <div class="p-3 border menuCard">E-Ticketing</div>
+                    <div class="p-3 border menuCard ">E-Ticketing</div>
                 </a>
             </div>
             <div class="col">
@@ -157,19 +159,19 @@
     </div>
     <div id="Gallery" class="nav-tiles"></div>
 
-    <div class="container overflow-hidden bg-texture">
-        <div class="row gx-5 ">
-            <div class="col">
+    <div class="container bg-texture">
+        <div class="row gx-1 h-25 ">
+            <div class="col my-5">
                 <div class="p-3 border">
                     <div id="FB"></div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col my-5">
                 <div class="p-3 border bg-light">
                     <div id="ImpLinks"></div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col my-5">
                 <div class="p-3 border bg-light">
                     <div id="Tweeter"></div>
                 </div>
@@ -177,12 +179,61 @@
         </div>
     </div>
     <div class="photoGallery" id="PhotoGallery"></div>
-    <!-- <div id="FlexSlider"> -->
+    <div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img alt="Open Government Data (OGD) Platform India"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019032275-q16g8757yab5zkmphjz5ab2hmadfolclyhu3ddq3mw.png" />
+            </div>
+            <div class="item">
+                <img alt="Make in India Banner"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019032259-q16g8757yab5zkmphjz5ab2hmadfolclyhu3ddq3mw.png" />
+            </div>
+            <div class="item">
+                <img alt="Incredible India Site"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019032251-q16g8757yab5zkmphjz5ab2hmadfolclyhu3ddq3mw.png" />
+            </div>
+            <div class="item">
+                <img alt="National Portal of India"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019052222-q16g7vv5o9vq4933bf3mgdwyhnx1483twy09m26tpk.png" />
+            </div>
+            <div class="item">
+                <img alt="Digital India"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019052265-q16g7uxbhfufsn4ggwozvw5hwa1nwj03ktcs4s87vs.png" />
+            </div>
+            <div class="item">
+                <img alt="Prime Minister of India"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019032217-q16g867drg9vnyo2n1kiptb10wi2gw8vmd6lw3rht4.png" />
+            </div>
+            <div class="item">
+                <img alt="MyGov"
+                    src="https://cdnbbsr.s3waas.gov.in/s316026d60ff9b54410b3435b403afd226/uploads/bfi_thumb/2019041050-q16g7yoo8rzl32yzuybi5v7c9tj4rbf0xbyq1w2n6w.png" />
+            </div>
+        </div>
     </div>
     <div id="footer"></div>
     <script src="./assets/js/popper.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
