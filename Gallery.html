@@ -1,9 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lg-transitions.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" type="text/css" href="https//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-6 p-4">
@@ -48,8 +47,24 @@
                 <div class="row gx-5">
                     <div class="col">
                         <div class="p-3 border">
+                            <!-- <ul class="single-item">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul> -->
                             <iframe width="510" height="315" src="https://www.youtube.com/embed/oZRr5hiBUHg">
                             </iframe>
+                            <!-- <iframe width="510" height="315" src="https://www.youtube.com/embed/oZRr5hiBUHg">
+                            </iframe>
+                            <iframe width="510" height="315" src="https://www.youtube.com/embed/67RO9HFfWF8">
+                            </iframe>
+                            <iframe width="510" height="315" src="https://www.youtube.com/embed/3jqo2ZCHUb8">
+                            </iframe>
+                            <iframe width="510" height="315" src="https://www.youtube.com/embed/zioBnm8Cn8k">
+                            </iframe>
+                            <iframe width="510" height="315" src="https://www.youtube.com/embed/1ihxUIEmWQs">
+                            </iframe> -->
+
                         </div>
 
 
@@ -63,24 +78,12 @@
 
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="https//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 <script>
+    $('.single-item').slick();
     lightGallery(document.getElementById('responsive-images'));
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        merge: true,
-        loop: true,
-        margin: 10,
-        video: true,
-        lazyLoad: true,
-        center: true,
-        responsive: {
-            480: {
-                items: 2
-            },
-            600: {
-                items: 4
-            }
-        }
-    })
+
 </script>
